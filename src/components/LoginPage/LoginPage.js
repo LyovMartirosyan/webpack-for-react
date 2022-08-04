@@ -6,7 +6,8 @@ import img3 from "../images/2.PNG";
 import img4 from "../images/3.PNG"
 import { useNavigate } from "react-router-dom";
 
-const LoginPage = () => {
+const LoginPage = (props) => {
+  const { setIsUserLogedIn } = props
   const [formData, setFormData] = useState({ name: "", password: "" });
 
   const history = useNavigate();
@@ -14,6 +15,7 @@ const LoginPage = () => {
   const onSubmit = (event) => {
     event.preventDefault();
     if (formData.name && formData.password) {
+      setIsUserLogedIn(true)
       history("/FoodDeliveryPage");
     }
     
