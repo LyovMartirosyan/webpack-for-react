@@ -16,7 +16,7 @@ import img15 from "../images/restaurant5.png";
 import img16 from "../images/restaurant6.png";
 import img17 from "../images/pizza_mini.png";
 import img18 from "../images/sushi_mini.png";
-import Restaurants from "../Restaurants/Restaurants";
+import Restaurants from "../Restaurants";
 
 const data = [
   {
@@ -114,10 +114,10 @@ const FoodDeliveryPage = () => {
           </div>
           <h4>Nearby restaurants</h4>
           {/* move this part to another component */}
-          </div>
-          <div>
-          <Restaurants/>
-          </div>
+        </div>
+        <div>
+          <Restaurants data={data} />
+        </div>
       </main>
     </>
   );
