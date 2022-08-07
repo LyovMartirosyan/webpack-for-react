@@ -1,7 +1,3 @@
-import React from 'react'
+import UserProfilePage from "./UserProfilePage"
+export default UserProfilePage
 
-export const USerProfilePage = () => {
-    return(
-        <h1>UserProfilePage</h1>
-    )
-}

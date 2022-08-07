@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import FoodDeliveryPage from "./FoodDeliveryPage/FoodDeliveryPage";
-import { USerProfilePage } from "./UserProfilePage";
+import  UserProfilePage  from "./UserProfilePage";
 import Header from './Header'
 
 import NoMatch from "./NoMatch";
@@ -21,7 +21,7 @@ const App = () => {
             path="/FoodDeliveryPage"
             element={<FoodDeliveryPage />}
           />
-          <Route exact path="/USerProfilePage" element={<USerProfilePage />} />
+          <Route exact path="/UserProfilePage" element={<UserProfilePage />} />
 
           <Route path="*" element={<NoMatch />} />
         </Routes>

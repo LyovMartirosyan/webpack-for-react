@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+.leftContainer {
+    width: 352px;
+  }
+
+.label {
+    position: absolute;
+    width: 266px;
+    height: 20px;
+    padding: 16px 16px 36px 68px;
+  }
+
+  .adress {
+    margin-top: 12px;
+    width: 350px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 238, 242, 1);
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  .rightContainer {
+    margin-left: 30px;
+    margin-top: 24px;
+  }
+
+  .box {
+    margin-top: 28px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 740px;
+    border: 1px solid rgba(237, 238, 242, 1);
+    border-radius: 16px
+  }
+
+  .av {
+    margin-left: 16px;
+    margin-top: 15px;
+  }
+
+  .personal_avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    margin-left: 30px;
+    padding: 0;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    position: static;
+    border: 1px solid rgba(78, 96, 255, 1)
+    
+  }
+
+  .buttonContent {
+    padding: 0;
+    font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #4E60FF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+
+  .buttonRemove {
+    margin-left: 30px;
+    padding: 0;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    position: static;
+    border: none;
+    
+  }
+
+  .buttonRemoveContent {
+    padding: 0;
+    font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: rgba(131, 133, 156, 1);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+
+  .notif {
+    margin-left: 16px;
+    margin-top: 36px ;
+  }
+
+  .checkingBox {
+    display: flex;
+   flex-wrap: wrap;
+   margin-top: 16px;
+  }
+
+  .ch {
+    margin: 0 15px 0 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .but {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 16px;
+    }
+
+    .changes {
+        display: flex;
+        
+      }

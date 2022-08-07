@@ -16,6 +16,7 @@ import img15 from "../images/restaurant5.png";
 import img16 from "../images/restaurant6.png";
 import img17 from "../images/pizza_mini.png";
 import img18 from "../images/sushi_mini.png";
+import Restaurants from "../Restaurants/Restaurants";
 
 const data = [
   {
@@ -23,42 +24,42 @@ const data = [
     url2: img17,
     title: "Royal Sushi House",
     infoText: "0-40 min ○ $32 min sum",
-    labelText: "Pizza",
+    labelText: "sushi",
+  },
+  {
+    url1: img12,
+    url2: img18,
+    title: "Burgers & Pizza",
+    infoText: "0-40 min ○ $32 min sum",
+    labelText: "Pizza & burger",
+  },
+  {
+    url1: img13,
+    url2: img17,
+    title: "Ninja sushi",
+    infoText: "0-40 min ○ $32 min sum",
+    labelText: "sushi",
+  },
+  {
+    url1: img12,
+    url2: img17,
+    title: "Pizzeria",
+    infoText: "0-40 min ○ $32 min sum",
+    labelText: "pizza",
   },
   {
     url1: img11,
     url2: img17,
     title: "Royal Sushi House",
     infoText: "0-40 min ○ $32 min sum",
-    labelText: "Pizza",
+    labelText: "sushi",
   },
   {
     url1: img11,
     url2: img17,
     title: "Royal Sushi House",
     infoText: "0-40 min ○ $32 min sum",
-    labelText: "Pizza",
-  },
-  {
-    url1: img11,
-    url2: img17,
-    title: "Royal Sushi House",
-    infoText: "0-40 min ○ $32 min sum",
-    labelText: "Pizza",
-  },
-  {
-    url1: img11,
-    url2: img17,
-    title: "Royal Sushi House",
-    infoText: "0-40 min ○ $32 min sum",
-    labelText: "Pizza",
-  },
-  {
-    url1: img11,
-    url2: img17,
-    title: "Royal Sushi House",
-    infoText: "0-40 min ○ $32 min sum",
-    labelText: "Pizza",
+    labelText: "sushi",
   },
 ];
 
@@ -113,33 +114,10 @@ const FoodDeliveryPage = () => {
           </div>
           <h4>Nearby restaurants</h4>
           {/* move this part to another component */}
-          <div className={styles.restaurants}>
-            {data.map((item) => {
-              return (
-                <div className={styles.restaurant}>
-                  <div className={styles.featured}>featured</div>
-                  <img src={item.url1} alt="" />
-                  <div className={styles.rDescription}>
-                    <p className={styles.title}>{item.title}</p>
-                    <p className={styles.time}>
-                      <i class="fa-solid fa-clock"></i>
-                      <span>{item.infoText}</span>
-                    </p>
-                    <div className={styles.tags}>
-                      <div className={styles.tag}>
-                        <img src={item.url2} alt="" />
-                        <span>{item.labelText}</span>
-                      </div>
-                    </div>
-                    <div className={styles.basket}>
-                      <i class="fa-solid fa-basket-shopping fa-xs"></i>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
           </div>
-        </div>
+          <div>
+          <Restaurants/>
+          </div>
       </main>
     </>
   );
