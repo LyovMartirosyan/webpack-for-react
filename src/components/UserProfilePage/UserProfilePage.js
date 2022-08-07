@@ -6,18 +6,18 @@ const UserProfilePage = () => {
     <div className={styles.container}>
       <div className={styles.leftContainer}>
         <h4>Settings</h4>
-        <div class="adress active">
+        <div className="adress active">
           <div className={styles.label}>
             <p>Account</p>
             <p>Personal information</p>
-            <i class="fa-solid fa-user-tie"></i>
+            <i className="fa-solid fa-user-tie"></i>
           </div>
         </div>
         <div className={styles.adress}>
           <div className={styles.label}>
             <p>Adress</p>
             <p>Shipping addresses</p>
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
           </div>
         </div>
 
@@ -25,7 +25,7 @@ const UserProfilePage = () => {
           <div classame={styles.label}>
             <p>Payment method</p>
             <p>Connected credit cards</p>
-            <i class="fa-solid fa-credit-card"></i>
+            <i className="fa-solid fa-credit-card"></i>
           </div>
         </div>
 
@@ -33,7 +33,7 @@ const UserProfilePage = () => {
           <div classame={styles.label}>
             <p>Security</p>
             <p>Password,2FA</p>
-            <i class="fa-solid fa-shield"></i>
+            <i className="fa-solid fa-shield"></i>
           </div>
         </div>
       </div>
@@ -41,14 +41,14 @@ const UserProfilePage = () => {
         <div classame={styles.label}>
           <p>Payment method</p>
           <p>Connected credit cards</p>
-          <i class="fa-solid fa-credit-card"></i>
+          <i className="fa-solid fa-credit-card"></i>
         </div>
       </div>
       <div className={styles.adress}>
         <div classame={styles.label}>
           <p>Security</p>
           <p>Password,2FA</p>
-          <i class="fa-solid fa-shield"></i>
+          <i className="fa-solid fa-shield"></i>
         </div>
       </div>
       <div className={styles.rightContainer}>
@@ -91,8 +91,14 @@ const UserProfilePage = () => {
           </div>
           <div className={styles.notif}>
             <h5>Email notifications</h5>
+
+            {/* es ktory chpetqa stex lini <tr> tagy inqy table -i meja ogagorcvum inqy chi kara
+              div -i mej lini */}
+            {/* mekel mi qani tex class - a grac petqa lini className dranq es uxxel em */}
+            {/* mekel du stex form es havaqel, u checked prop es tvel ches kara tenc tanc, reactum inqy petqa 
+              state-ic kaxvac lini */}
             <div className={styles.checkingBox}>
-              <tr>
+              {/* <tr>
                 <td className={styles.check}></td>
                 <td>
                   <label>
@@ -101,7 +107,7 @@ const UserProfilePage = () => {
                       type="checkbox"
                       name="New deals"
                       value="New deals"
-                      checked
+                      // checked
                     />
                     New deals
                   </label>
@@ -111,7 +117,7 @@ const UserProfilePage = () => {
                       type="checkbox"
                       name="New restaurants"
                       value="New restaurants"
-                      checked
+                      // checked
                     />
                     New restaurants
                   </label>
@@ -121,7 +127,7 @@ const UserProfilePage = () => {
                       type="checkbox"
                       name="Order statuses"
                       value="Order statuses"
-                      checked
+                      // checked
                     />
                     Order statuses
                   </label>
@@ -133,7 +139,7 @@ const UserProfilePage = () => {
                       type="checkbox"
                       name="Password changes"
                       value="Password changes"
-                      checked
+                      // checked
                     />
                     Password changes
                   </label>
@@ -143,7 +149,7 @@ const UserProfilePage = () => {
                       type="checkbox"
                       name="Special offers"
                       value="Special offers"
-                      checked
+                      // checked
                     />
                     Special offers
                   </label>
@@ -153,12 +159,12 @@ const UserProfilePage = () => {
                       type="checkbox"
                       name="Newsletter"
                       value="Newsletter"
-                      checked
+                      // checked
                     />
                     Newsletter
                   </label>
                 </td>
-              </tr>
+              </tr> */}
             </div>
           </div>
 
