@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.css";
 import img3 from "../images/cake_bg.png";
 import img4 from "../images/burger_bg.png";
@@ -13,6 +13,8 @@ import Restaurants from "../Restaurants";
 
 
 const FoodDeliveryPage = () => {
+  
+  const [selected,setSelected]=useState(null)
   return (
     <>
       <main>
@@ -36,36 +38,36 @@ const FoodDeliveryPage = () => {
             </div>
           </div>
           <div className={styles.categories}>
-            <div className={styles.category}>
+            <button onClick={() => setSelected("pizza")} className={styles.category}>
               <img src={img5} alt="" />
               <p>Pizza</p>
-            </div>
-            <div className={styles.active && styles.category}>
+            </button>
+            <button onClick={() => setSelected("burger")} className={styles.active && styles.category}>
               <img src={img6} alt="" />
               <p>Burger</p>
-            </div>
-            <div className={styles.category}>
+            </button>
+            <button onClick={() => setSelected("bbq")} className={styles.category}>
               <img src={img7} alt="" />
               <p>BBQ</p>
-            </div>
-            <div className={styles.active && styles.category}>
+            </button>
+            <button onClick={() => setSelected("sushi")} className={styles.active && styles.category}>
               <img src={img8} alt="" />
               <p>Sushi</p>
-            </div>
-            <div className={styles.category}>
+            </button>
+            <button onClick={() => setSelected("vegan")} className={styles.category}>
               <img src={img9} alt="" />
               <p>Vegan</p>
-            </div>
-            <div className={styles.category}>
+            </button>
+            <button onClick={() => setSelected("desserts")} className={styles.category}>
               <img src={img10} alt="" />
               <p>Desserts</p>
-            </div>
+            </button>
           </div>
           <h4>Nearby restaurants</h4>
           {/* move this part to another component */}
         </div>
-        <div>
-          <Restaurants />
+        <div className={styles.container}>
+          <Restaurants selected={selected} />
         </div>
       </main>
     </>

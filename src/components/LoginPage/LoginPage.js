@@ -4,21 +4,19 @@ import img1 from "../images/main.svg";
 import img2 from "../images/1.PNG";
 import img3 from "../images/2.PNG";
 import img4 from "../images/3.PNG"
-import { useNavigate } from "react-router-dom";
+import users from "./users.json"
 
 const LoginPage = (props) => {
   const { setIsUserLogedIn } = props
-  const [formData, setFormData] = useState({ name: "", password: "" });
 
-  const history = useNavigate();
+  const [formData, setFormData] = useState({ name: "", password: "" });
 
   const onSubmit = (event) => {
     event.preventDefault();
-    if (formData.name && formData.password) {
+    const result = users.list.find(({username,password}) => username  === formData.name && password === formData.password);
+    if (result) {
       setIsUserLogedIn(true)
-      history("/FoodDeliveryPage");
     }
-    
   };
 
   return (

@@ -9,6 +9,8 @@ import img16 from "../images/restaurant6.png";
 import img17 from "../images/pizza_mini.png";
 import img18 from "../images/sushi_mini.png";
 
+
+
 const data = [
   {
     url1: img11,
@@ -16,6 +18,7 @@ const data = [
     title: "Royal Sushi House",
     infoText: "0-40 min ○ $32 min sum",
     labelText: "sushi",
+    type:["sushi"]
   },
   {
     url1: img12,
@@ -23,6 +26,7 @@ const data = [
     title: "Burgers & Pizza",
     infoText: "0-40 min ○ $32 min sum",
     labelText: "Pizza & burger",
+    type:["pizza","burger"]
   },
   {
     url1: img13,
@@ -30,6 +34,7 @@ const data = [
     title: "Ninja sushi",
     infoText: "0-40 min ○ $32 min sum",
     labelText: "sushi",
+    type:["sushi"]
   },
   {
     url1: img12,
@@ -37,6 +42,7 @@ const data = [
     title: "Pizzeria",
     infoText: "0-40 min ○ $32 min sum",
     labelText: "pizza",
+    type:["pizza"]
   },
   {
     url1: img11,
@@ -44,6 +50,7 @@ const data = [
     title: "Royal Sushi House",
     infoText: "0-40 min ○ $32 min sum",
     labelText: "sushi",
+    type:["sushi"]
   },
   {
     url1: img11,
@@ -51,14 +58,17 @@ const data = [
     title: "Royal Sushi House",
     infoText: "0-40 min ○ $32 min sum",
     labelText: "sushi",
+    type:["sushi"]
   },
 ];
 
 
-const Restaurants = () => {
+const Restaurants = (props) => {
+
+  const filteredData =props.selected ? data.filter((item) => item.type.includes(props.selected)) : data
   return (
     <div className={styles.restaurants}>
-      {data.map((item, index) => {
+      {filteredData.map((item, index) => {
         return (
           <div className={styles.restaurant} key={index}>
             <div className={styles.featured}>featured</div>

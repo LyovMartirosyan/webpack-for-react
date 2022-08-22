@@ -9,10 +9,13 @@ const Header = () => {
         <header>
         <div className={styles.container}>
           <div className={styles.leftBox}>
+            <Link to="/">
             <img src={img1} alt="logo" />
+            </Link>
+
             <div>
               <input type="text" placeholder="Search" />
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </div>
           </div>
           <div className={styles.rightBox}>
@@ -29,7 +32,7 @@ const Header = () => {
             </ul>
             <div className={styles.basket}>
               <span>4</span>
-              <i class="fa-solid fa-basket-shopping"></i>
+              <i className="fa-solid fa-basket-shopping"></i>
             </div>
             <div className={styles.avatar}>
               <Link to="/USerProfilePage">
@@ -37,7 +40,7 @@ const Header = () => {
               </Link>
             </div>
             <div className={styles.mobileMenu}>
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             </div>
           </div>
         </div>
